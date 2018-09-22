@@ -1,4 +1,4 @@
-const Game = require('../app/models/game');
+const Game = require('../../app/models/game')
 
 describe('When a game is initialised', () => {
   let game
@@ -8,5 +8,9 @@ describe('When a game is initialised', () => {
 
   test('it has rooms', () => {
     expect(game.rooms).toEqual([])
+  })
+
+  test('it hase a player', () => {
+    expect(game.player).toEqual("player")
   })
 })
